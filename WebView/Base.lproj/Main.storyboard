@@ -11,7 +11,7 @@
         <!--First-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="First" id="BYZ-38-t0r" customClass="ViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="First" id="BYZ-38-t0r" customClass="ViewController" customModule="WebView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +36,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Navigation Menu" id="K0U-Ea-ur9">
+                    <navigationItem key="navigationItem" title="WebView Menu" id="K0U-Ea-ur9">
                         <barButtonItem key="backBarButtonItem" title="Menu" id="K1b-0K-dt3"/>
                     </navigationItem>
                 </viewController>
@@ -81,18 +81,37 @@
         <!--Controller 2-->
         <scene sceneID="tS6-pQ-0D4">
             <objects>
-                <viewController id="G81-xs-vJY" sceneMemberID="viewController">
+                <viewController id="G81-xs-vJY" customClass="ViewController" customModule="WebView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dHr-ii-9cI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rOf-Y6-9We">
+                                <rect key="frame" x="0.0" y="88" width="414" height="627"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="UVc-LQ-4CR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rOf-Y6-9We" firstAttribute="trailing" secondItem="UVc-LQ-4CR" secondAttribute="trailing" id="ECg-9J-fpV"/>
+                            <constraint firstItem="rOf-Y6-9We" firstAttribute="top" secondItem="UVc-LQ-4CR" secondAttribute="top" id="InT-L1-9hW"/>
+                            <constraint firstAttribute="bottom" secondItem="rOf-Y6-9We" secondAttribute="bottom" id="Kfb-77-kTq"/>
+                            <constraint firstItem="rOf-Y6-9We" firstAttribute="leading" secondItem="UVc-LQ-4CR" secondAttribute="leading" id="mB1-og-ffX"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Controller 2" id="VZQ-R8-CwV"/>
+                    <connections>
+                        <outlet property="webView" destination="rOf-Y6-9We" id="8LG-dQ-ki8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sLU-l4-14p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="790"/>
+            <point key="canvasLocation" x="1624.6376811594205" y="789.50892857142856"/>
         </scene>
     </scenes>
     <resources>

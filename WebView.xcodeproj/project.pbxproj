@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		11889ED0263BFD0200FC09AF /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11889ED0263BFD0200FC09AF /* WebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11889ED3263BFD0200FC09AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11889ED5263BFD0200FC09AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11889ED7263BFD0200FC09AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		11889EC7263BFD0200FC09AF = {
 			isa = PBXGroup;
 			children = (
-				11889ED2263BFD0200FC09AF /* Navigation */,
+				11889ED2263BFD0200FC09AF /* WebView */,
 				11889ED1263BFD0200FC09AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		11889ED1263BFD0200FC09AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11889ED0263BFD0200FC09AF /* Navigation.app */,
+				11889ED0263BFD0200FC09AF /* WebView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		11889ED2263BFD0200FC09AF /* Navigation */ = {
+		11889ED2263BFD0200FC09AF /* WebView */ = {
 			isa = PBXGroup;
 			children = (
 				11889ED3263BFD0200FC09AF /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				11889EDE263BFD0300FC09AF /* LaunchScreen.storyboard */,
 				11889EE1263BFD0300FC09AF /* Info.plist */,
 			);
-			path = Navigation;
+			path = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11889ECF263BFD0200FC09AF /* Navigation */ = {
+		11889ECF263BFD0200FC09AF /* WebView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11889EE4263BFD0300FC09AF /* Build configuration list for PBXNativeTarget "Navigation" */;
+			buildConfigurationList = 11889EE4263BFD0300FC09AF /* Build configuration list for PBXNativeTarget "WebView" */;
 			buildPhases = (
 				11889ECC263BFD0200FC09AF /* Sources */,
 				11889ECD263BFD0200FC09AF /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = Navigation;
+			name = WebView;
 			productName = Navigation;
-			productReference = 11889ED0263BFD0200FC09AF /* Navigation.app */;
+			productReference = 11889ED0263BFD0200FC09AF /* WebView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 11889ECB263BFD0200FC09AF /* Build configuration list for PBXProject "Navigation" */;
+			buildConfigurationList = 11889ECB263BFD0200FC09AF /* Build configuration list for PBXProject "WebView" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11889ECF263BFD0200FC09AF /* Navigation */,
+				11889ECF263BFD0200FC09AF /* WebView */,
 			);
 		};
 /* End PBXProject section */
@@ -288,12 +288,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LA3HM9Z55Z;
-				INFOPLIST_FILE = Navigation/Info.plist;
+				INFOPLIST_FILE = WebView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.borisSobolev.Navigation;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.borisSobolev.WebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -307,12 +307,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LA3HM9Z55Z;
-				INFOPLIST_FILE = Navigation/Info.plist;
+				INFOPLIST_FILE = WebView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.borisSobolev.Navigation;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.borisSobolev.WebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -322,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11889ECB263BFD0200FC09AF /* Build configuration list for PBXProject "Navigation" */ = {
+		11889ECB263BFD0200FC09AF /* Build configuration list for PBXProject "WebView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11889EE2263BFD0300FC09AF /* Debug */,
@@ -331,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11889EE4263BFD0300FC09AF /* Build configuration list for PBXNativeTarget "Navigation" */ = {
+		11889EE4263BFD0300FC09AF /* Build configuration list for PBXNativeTarget "WebView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11889EE5263BFD0300FC09AF /* Debug */,
